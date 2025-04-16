@@ -68,6 +68,25 @@ public class Main {
                         operations.searchByPosition(index).display();
                         break;
 
+                        case 6:
+                        // Updating an existing student's details
+                        System.out.print("Enter PRN of student to update: ");
+                        prn = scan.nextInt();
+                        scan.nextLine(); // Consume newline
+                        System.out.print("Enter New Name: ");
+                        name = scan.nextLine();
+                        System.out.print("Enter New Branch: ");
+                        branch = scan.nextLine();
+                        System.out.print("Enter New Batch: ");
+                        batch = scan.nextLine();
+                        System.out.print("Enter New CGPA: ");
+                        cgpa = scan.nextFloat();
+                        scan.nextLine(); // Consume newline
+                        // Update student record with the new values
+                        operations.updateStudent(prn, name, branch, batch, cgpa);
+                        System.out.println("Student updated successfully.");
+                        break;
+
 
 
 
