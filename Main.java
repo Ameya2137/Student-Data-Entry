@@ -105,6 +105,15 @@ public class Main {
                         // Handling invalid menu options
                         throw new InvalidInputException("Invalid menu choice. Try again.");
                 }
+            } catch (StudentNotFoundException | StudentAlreadyExistsException | InvalidInputException e) {
+                // Custom exceptions related to student operations
+                System.out.println("Error: " + e.getMessage());
+            } catch (InputMismatchException e) {
+                // Catching incorrect input format (e.g., text when number expected)
+                System.out.println("Invalid input type. Please enter data correctly.");
+                scan.nextLine(); // Clear buffer
+            }
+
 
 
 
