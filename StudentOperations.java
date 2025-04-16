@@ -57,3 +57,13 @@ public class StudentOperations {
         throw new StudentNotFoundException("Student with name \"" + name + "\" not found.");
     }
 
+    // Method to search student by their position (index in the list)
+    public Student searchByPosition(int index) throws InvalidInputException {
+        if (index < 0 || index >= students.size()) {
+            // Index is out of bounds
+            throw new InvalidInputException("Invalid index. Must be between 0 and " + (students.size() - 1));
+        }
+        return students.get(index); // Return student at given index
+    }
+
+
