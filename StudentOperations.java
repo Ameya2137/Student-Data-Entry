@@ -66,4 +66,16 @@ public class StudentOperations {
         return students.get(index); // Return student at given index
     }
 
+    // Method to update an existing student's information
+    public boolean updateStudent(int prn, String name, String branch, String batch, float cgpa) throws StudentNotFoundException {
+        Student s = searchByPRN(prn); // Find student by PRN
+        // Update student's details
+        s.setName(name);
+        s.setBranch(branch);
+        s.setBatch(batch);
+        s.setCGPA(cgpa);
+        return true;
+    }
+
+
 
