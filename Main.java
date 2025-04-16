@@ -45,5 +45,14 @@ public class Main {
                         operations.displayStudents();
                         break;
 
+                        case 3:
+                        // Searching student by PRN
+                        System.out.print("Enter PRN to search: ");
+                        prn = scan.nextInt();
+                        scan.nextLine(); // Consume newline
+                        operations.searchByPRN(prn).display();
+                        break;
+
+
 
             
