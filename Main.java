@@ -21,5 +21,24 @@ public class Main {
             try {
                 // Switch case for various user options
                 switch (choice) {
+                        case 1:
+                        // Adding a new student
+                        System.out.print("Enter Name: ");
+                        String name = scan.nextLine();
+                        System.out.print("Enter PRN: ");
+                        int prn = scan.nextInt();
+                        scan.nextLine(); // Consume newline
+                        System.out.print("Enter Branch: ");
+                        String branch = scan.nextLine();
+                        System.out.print("Enter Batch: ");
+                        String batch = scan.nextLine();
+                        System.out.print("Enter CGPA: ");
+                        float cgpa = scan.nextFloat();
+                        scan.nextLine(); // Consume newline
+                        // Add the new student to the list
+                        operations.addStudent(new Student(name, prn, branch, batch, cgpa));
+                        System.out.println("Student added successfully.");
+                        break;
+
 
             
