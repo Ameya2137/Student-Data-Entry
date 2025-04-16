@@ -45,3 +45,15 @@ public class StudentOperations {
         // Throw exception if student not found
         throw new StudentNotFoundException("Student with PRN " + prn + " not found.");
     }
+
+    // Method to search student by name
+    public Student searchByName(String name) throws StudentNotFoundException {
+        for (Student s : students) {
+            if (s.getName().equalsIgnoreCase(name)) {
+                return s; // Return student if name matches (case-insensitive)
+            }
+        }
+        // Throw exception if student not found
+        throw new StudentNotFoundException("Student with name \"" + name + "\" not found.");
+    }
+
