@@ -60,6 +60,14 @@ public class Main {
                         operations.searchByName(name).display();
                         break;
 
+                        case 5:
+                        // Searching student by their position (index)
+                        System.out.print("Enter Position (Index): ");
+                        int index = scan.nextInt();
+                        scan.nextLine(); // Consume newline
+                        operations.searchByPosition(index).display();
+                        break;
+
 
 
 
