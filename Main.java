@@ -87,6 +87,15 @@ public class Main {
                         System.out.println("Student updated successfully.");
                         break;
 
+                        case 7:
+                        // Deleting a student using PRN
+                        System.out.print("Enter PRN of student to delete: ");
+                        prn = scan.nextInt();
+                        scan.nextLine(); // Consume newline
+                        operations.deleteStudent(prn);
+                        System.out.println("Student deleted successfully.");
+                        break;
+
 
 
 
