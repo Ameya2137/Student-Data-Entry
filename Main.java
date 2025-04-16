@@ -53,6 +53,14 @@ public class Main {
                         operations.searchByPRN(prn).display();
                         break;
 
+                        case 4:
+                        // Searching student by Name
+                        System.out.print("Enter Name to search: ");
+                        name = scan.nextLine();
+                        operations.searchByName(name).display();
+                        break;
+
+
 
 
             
