@@ -113,6 +113,12 @@ public class Main {
                 System.out.println("Invalid input type. Please enter data correctly.");
                 scan.nextLine(); // Clear buffer
             }
+        } while (choice != 8); // Repeat until user chooses to exit
+
+        scan.close(); // Closing the scanner object
+    }
+}
+
 
 
 
