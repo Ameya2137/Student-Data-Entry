@@ -18,3 +18,11 @@ public class Student {
         this.cgpa = cgpa;
     }
 
+    // Getters (accessor methods)
+    public String getName() { return name; }
+    public int getPRN() { return prn; }
+    public String getBranch() { return branch; }
+    public String getBatch() { return batch; }
+    public float getCGPA() { return cgpa; }
+
+
