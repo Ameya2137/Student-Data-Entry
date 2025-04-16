@@ -96,6 +96,16 @@ public class Main {
                         System.out.println("Student deleted successfully.");
                         break;
 
+                        case 8:
+                        // Exiting the program
+                        System.out.println("Exiting...");
+                        break;
+
+                    default:
+                        // Handling invalid menu options
+                        throw new InvalidInputException("Invalid menu choice. Try again.");
+                }
+
 
 
 
