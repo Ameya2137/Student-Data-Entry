@@ -25,4 +25,11 @@ public class Student {
     public String getBatch() { return batch; }
     public float getCGPA() { return cgpa; }
 
+    // Setters (mutator methods)
+    public void setName(String name) { this.name = name; }
+    public void setBranch(String branch) { this.branch = branch; }
+    public void setBatch(String batch) { this.batch = batch; }
+    public void setCGPA(float cgpa) { this.cgpa = cgpa; }
+
+
 
