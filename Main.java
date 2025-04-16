@@ -18,5 +18,8 @@ public class Main {
             System.out.print("Enter your choice: ");
             choice = scan.nextInt(); // Taking user choice
             scan.nextLine(); // Consuming the newline character left after nextInt()
+            try {
+                // Switch case for various user options
+                switch (choice) {
 
             
