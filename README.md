@@ -24,8 +24,8 @@ This Java project is a console-based Student Data Entry System that allows addin
 - Main.java                          Main entry point and menu-driven CLI
 
 ## How to Run
-1. Clone the repository using Git: 
-2. Navigate into the project directory:
-3. Compile all Java files:
-4. Run the main program: 
+1. Clone the repository using Git: https://github.com/Ameya2137/Student-Data-Entry.git
+2. Navigate into the project directory: cd Student-Data-Entry
+3. Compile all Java files: javac *.java
+4. Run the main program: java Main
 
